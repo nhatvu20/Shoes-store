@@ -295,6 +295,29 @@ header i:hover{
 .home .active{
     display: block; 
 }
+
+.dots-btn{
+    z-index: 1;
+    display: flex;
+    position: absolute;
+    bottom: 2.5rem;
+    gap: 1.5rem;
+}
+.dot {
+    height:2.5rem  ;
+    width: 2.5rem;
+    /* background: var(--grey); */
+    background: var(--black);
+    border-radius: 50%;
+    border: 0.1rem solid var(--black);
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.dotActive{
+    background: #fff;
+}
+
 /* Home slider end */
 
 

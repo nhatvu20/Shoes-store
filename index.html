@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shoes Store</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <!-- header start -->
@@ -28,6 +28,8 @@
         </div>
     </header>
     <!-- header end -->
+
+    <!-- Slider start -->
     <section class="home" id="home">
         <div class="slider-container active">
             <div class="slide">
@@ -55,7 +57,7 @@
                 </div>
                 <div class="image">
                     <img src="./images/home-shoe-2.png" class="shoe" alt="">
-                    <img src="images/home-text-2.png" class="text" alt="">
+                    <img src="./images/home-text-2.png" class="text" alt="">
                 </div>
             </div>
         </div>
@@ -70,14 +72,20 @@
                 </div>
                 <div class="image">
                     <img src="./images/home-shoe-3.png" class="shoe" alt="">
-                    <img src="images/home-text-3.png" class="text" alt="">
+                    <img src="./images/home-text-3.png" class="text" alt="">
                 </div>
             </div>
         </div>
-    <div id="prev" class="fas fa-chevron-left" onclick="prev()"></div>
-    <div id="next" class="fas fa-chevron-right" onclick="next()"></div>
+        <div id="prev" class="fas fa-chevron-left" onclick="prev()"></div>
+        <div id="next" class="fas fa-chevron-right" onclick="next()"></div>
+        <div class="dots-btn">
+            <div class="dot dotActive" onclick="currentSlide(0)"></div>
+            <div class="dot" onclick="currentSlide(1)"></div>
+            <div class="dot" onclick="currentSlide(2)"></div>
+        </div>
     </section>
-    
+    <!-- Slider End -->
+
     <!-- Start Service -->
     <section class="service">
         <div class="box-container">
@@ -473,6 +481,6 @@
 <!-- Footer start-->
     
     <!-- link js -->
-    <script src="/js/script.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 </html>
